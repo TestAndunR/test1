@@ -22,7 +22,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "test1/lambda.js",
-        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "code": "exports.handler = function(event, context, callback) {\n    console.log(\"Yeas\")\n    callback(null, {\"message\": \"Successfully executed\"});\n}",
         "triggers": [],
         "config": {
           "runtime": "nodejs8.10",
@@ -31,9 +31,7 @@
         }
       }
     },
-    "deletedFiles": [
-      "test1/newLamda.js"
-    ],
+    "deletedFiles": [],
     "rootNode": "ae78d98b-238e-41d7-a5e4-9cc6458e76a5",
     "openFiles": [
       "d6dd33be-5839-4536-99f3-228994b16180"
@@ -61,7 +59,7 @@
     "projectVersion": "1.0.0",
     "projectRegion": "us-east-1",
     "platform": "AWS",
-    "lastSave": 1540466917248
+    "lastSave": 1540466983351
   },
   "VCS_STATE": {
     "provider": "GitHub",

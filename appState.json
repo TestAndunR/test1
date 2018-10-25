@@ -8,7 +8,8 @@
         "type": "DIRECTORY",
         "isDirectory": true,
         "children": [
-          "d6dd33be-5839-4536-99f3-228994b16180"
+          "d6dd33be-5839-4536-99f3-228994b16180",
+          "e7fdb1cb-4abe-4f00-8193-e50520dca5d6"
         ],
         "isRemovable": false,
         "filePath": "test1"
@@ -22,21 +23,42 @@
         "children": [],
         "isRemovable": true,
         "filePath": "test1/lambda.js",
-        "code": "exports.handler = function(event, context, callback) {\n    console.log(\"Yeas\")\n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "code": "exports.handler = function(event, context, callback) {\n    console.log(\"Yeas\");\n    callback(null, {\"message\": \"Successfully executed\"});\n}",
         "triggers": [],
         "config": {
           "runtime": "nodejs8.10",
           "timeout": 60,
           "memory": 128
+        },
+        "testCases": {
+          "0d561266-6c30-44a8-828a-c6b68d591f6b": {
+            "id": "0d561266-6c30-44a8-828a-c6b68d591f6b",
+            "name": "Unnamed event",
+            "functionId": "d6dd33be-5839-4536-99f3-228994b16180",
+            "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
+          }
         }
+      },
+      "e7fdb1cb-4abe-4f00-8193-e50520dca5d6": {
+        "id": "e7fdb1cb-4abe-4f00-8193-e50520dca5d6",
+        "parent": "ae78d98b-238e-41d7-a5e4-9cc6458e76a5",
+        "name": "add javascript file.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "test1/add javascript file.js",
+        "code": "sdsdsdsd",
+        "triggers": []
       }
     },
     "deletedFiles": [],
     "rootNode": "ae78d98b-238e-41d7-a5e4-9cc6458e76a5",
     "openFiles": [
-      "d6dd33be-5839-4536-99f3-228994b16180"
+      "d6dd33be-5839-4536-99f3-228994b16180",
+      "e7fdb1cb-4abe-4f00-8193-e50520dca5d6"
     ],
-    "currentFileId": "d6dd33be-5839-4536-99f3-228994b16180",
+    "currentFileId": "e7fdb1cb-4abe-4f00-8193-e50520dca5d6",
     "resources": {},
     "envVariables": [
       {
@@ -59,7 +81,7 @@
     "projectVersion": "1.0.0",
     "projectRegion": "us-east-1",
     "platform": "AWS",
-    "lastSave": 1540466983351
+    "lastSave": 1540467124839
   },
   "VCS_STATE": {
     "provider": "GitHub",

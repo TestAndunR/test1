@@ -1,0 +1,71 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "ae78d98b-238e-41d7-a5e4-9cc6458e76a5": {
+        "id": "ae78d98b-238e-41d7-a5e4-9cc6458e76a5",
+        "parent": null,
+        "name": "test1",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "d6dd33be-5839-4536-99f3-228994b16180"
+        ],
+        "isRemovable": false,
+        "filePath": "test1"
+      },
+      "d6dd33be-5839-4536-99f3-228994b16180": {
+        "id": "d6dd33be-5839-4536-99f3-228994b16180",
+        "parent": "ae78d98b-238e-41d7-a5e4-9cc6458e76a5",
+        "name": "lambda.js",
+        "type": "LAMBDA_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "test1/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "triggers": [],
+        "config": {
+          "runtime": "nodejs8.10",
+          "timeout": 60,
+          "memory": 128
+        }
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "ae78d98b-238e-41d7-a5e4-9cc6458e76a5",
+    "openFiles": [
+      "d6dd33be-5839-4536-99f3-228994b16180"
+    ],
+    "currentFileId": "d6dd33be-5839-4536-99f3-228994b16180",
+    "resources": {},
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    },
+    "lambdaId": "d6dd33be-5839-4536-99f3-228994b16180"
+  },
+  "PROJECT_META": {
+    "projectName": "test1",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "lastSave": 1540466768036
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "test1",
+      "url": "https://github.com/TestAndunR/test1"
+    }
+  }
+}

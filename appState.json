@@ -8,7 +8,8 @@
         "type": "DIRECTORY",
         "isDirectory": true,
         "children": [
-          "d6dd33be-5839-4536-99f3-228994b16180"
+          "d6dd33be-5839-4536-99f3-228994b16180",
+          "8c8c1bb1-de85-4f3a-bceb-a5ccad818513"
         ],
         "isRemovable": false,
         "filePath": "test1"
@@ -29,14 +30,32 @@
           "timeout": 60,
           "memory": 128
         }
+      },
+      "8c8c1bb1-de85-4f3a-bceb-a5ccad818513": {
+        "id": "8c8c1bb1-de85-4f3a-bceb-a5ccad818513",
+        "parent": "ae78d98b-238e-41d7-a5e4-9cc6458e76a5",
+        "name": "newLamda.js",
+        "type": "LAMBDA_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "test1/newLamda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "triggers": [],
+        "config": {
+          "runtime": "nodejs8.10",
+          "timeout": 60,
+          "memory": 128
+        }
       }
     },
     "deletedFiles": [],
     "rootNode": "ae78d98b-238e-41d7-a5e4-9cc6458e76a5",
     "openFiles": [
-      "d6dd33be-5839-4536-99f3-228994b16180"
+      "d6dd33be-5839-4536-99f3-228994b16180",
+      "8c8c1bb1-de85-4f3a-bceb-a5ccad818513"
     ],
-    "currentFileId": "d6dd33be-5839-4536-99f3-228994b16180",
+    "currentFileId": "8c8c1bb1-de85-4f3a-bceb-a5ccad818513",
     "resources": {},
     "envVariables": [
       {
@@ -59,7 +78,7 @@
     "projectVersion": "1.0.0",
     "projectRegion": "us-east-1",
     "platform": "AWS",
-    "lastSave": 1540466768036
+    "lastSave": 1540466849113
   },
   "VCS_STATE": {
     "provider": "GitHub",

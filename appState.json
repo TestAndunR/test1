@@ -22,8 +22,13 @@
         "children": [],
         "isRemovable": true,
         "filePath": "test1/lambda.js",
-        "code": "exports.handler = function(event, context, callback) {\n    console.log(\"Yeas\");\n    callback(null, {\"message\": \"Successfully executed\"});\n}",
-        "triggers": [],
+        "code": "exports.handler = function(event, context, callback) {\n    console.log(\"Yeas\");\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "triggers": [
+          {
+            "resourceName": "apigusEast1hotspacesvendor16382dd9promopost",
+            "config": {}
+          }
+        ],
         "config": {
           "runtime": "nodejs8.10",
           "timeout": 60,
@@ -39,15 +44,43 @@
         }
       }
     },
-    "deletedFiles": [
-      "test1/add javascript file.js"
-    ],
+    "deletedFiles": [],
     "rootNode": "ae78d98b-238e-41d7-a5e4-9cc6458e76a5",
     "openFiles": [
       "d6dd33be-5839-4536-99f3-228994b16180"
     ],
     "currentFileId": "d6dd33be-5839-4536-99f3-228994b16180",
-    "resources": {},
+    "resources": {
+      "apigusEast1hotspacesvendor16382dd9promopost": {
+        "name": "apigusEast1hotspacesvendor16382dd9promopost",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "hotspacesvendor16382dd9",
+          "apiVersion": "2018-05-24T17:52:00Z",
+          "apiId": "csobb7r9dg",
+          "endpointType": "EDGE",
+          "rootResourceId": "6rn8dq018e",
+          "existingResources": {
+            "/": "6rn8dq018e",
+            "/promo/{proxy+}": "97qc6f",
+            "/promo": "lo42ta"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/promo",
+          "resourceName": "promo",
+          "resourceId": "lo42ta",
+          "restMethod": "POST",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "Prod",
+          "stageDeploymentId": "hlrxrw"
+        },
+        "globallyEditable": false
+      }
+    },
     "envVariables": [
       {
         "lambdaId": "all",
@@ -69,7 +102,7 @@
     "projectVersion": "1.0.0",
     "projectRegion": "us-east-1",
     "platform": "AWS",
-    "lastSave": 1540467142148
+    "lastSave": 1540738244646
   },
   "VCS_STATE": {
     "provider": "GitHub",

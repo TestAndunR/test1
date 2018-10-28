@@ -9,7 +9,8 @@
         "isDirectory": true,
         "children": [
           "d6dd33be-5839-4536-99f3-228994b16180",
-          "9cc7ec6d-c7c5-4b87-8e4e-c8e7fcfea81e"
+          "9cc7ec6d-c7c5-4b87-8e4e-c8e7fcfea81e",
+          "ddfc5f8f-cda2-4ba8-8846-3dffcd12355e"
         ],
         "isRemovable": false,
         "filePath": "test1"
@@ -60,6 +61,65 @@
           "timeout": 60,
           "memory": 128
         }
+      },
+      "ddfc5f8f-cda2-4ba8-8846-3dffcd12355e": {
+        "id": "ddfc5f8f-cda2-4ba8-8846-3dffcd12355e",
+        "parent": "ae78d98b-238e-41d7-a5e4-9cc6458e76a5",
+        "name": "test",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "e175d333-2eeb-4cba-9595-4696c88cdf78",
+          "669fa892-c1ec-4535-aedc-1e52741bd4e2"
+        ],
+        "isRemovable": true,
+        "filePath": "test1/test"
+      },
+      "e175d333-2eeb-4cba-9595-4696c88cdf78": {
+        "id": "e175d333-2eeb-4cba-9595-4696c88cdf78",
+        "parent": "ddfc5f8f-cda2-4ba8-8846-3dffcd12355e",
+        "name": "test",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "3bedf9c9-685b-4974-8adb-7f236fe28220"
+        ],
+        "isRemovable": true,
+        "filePath": "test1/test/test"
+      },
+      "669fa892-c1ec-4535-aedc-1e52741bd4e2": {
+        "id": "669fa892-c1ec-4535-aedc-1e52741bd4e2",
+        "parent": "ddfc5f8f-cda2-4ba8-8846-3dffcd12355e",
+        "name": "lambda.js",
+        "type": "LAMBDA_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "test1/test/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "triggers": [],
+        "config": {
+          "runtime": "nodejs8.10",
+          "timeout": 60,
+          "memory": 128
+        }
+      },
+      "3bedf9c9-685b-4974-8adb-7f236fe28220": {
+        "id": "3bedf9c9-685b-4974-8adb-7f236fe28220",
+        "parent": "e175d333-2eeb-4cba-9595-4696c88cdf78",
+        "name": "lambda.js",
+        "type": "LAMBDA_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "test1/test/test/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "triggers": [],
+        "config": {
+          "runtime": "nodejs8.10",
+          "timeout": 60,
+          "memory": 128
+        }
       }
     },
     "deletedFiles": [
@@ -68,9 +128,11 @@
     "rootNode": "ae78d98b-238e-41d7-a5e4-9cc6458e76a5",
     "openFiles": [
       "d6dd33be-5839-4536-99f3-228994b16180",
-      "9cc7ec6d-c7c5-4b87-8e4e-c8e7fcfea81e"
+      "9cc7ec6d-c7c5-4b87-8e4e-c8e7fcfea81e",
+      "669fa892-c1ec-4535-aedc-1e52741bd4e2",
+      "3bedf9c9-685b-4974-8adb-7f236fe28220"
     ],
-    "currentFileId": "9cc7ec6d-c7c5-4b87-8e4e-c8e7fcfea81e",
+    "currentFileId": "d6dd33be-5839-4536-99f3-228994b16180",
     "resources": {
       "apigusEast1hotspacesvendor16382dd9promopost": {
         "name": "apigusEast1hotspacesvendor16382dd9promopost",
@@ -123,7 +185,7 @@
     "projectVersion": "1.0.0",
     "projectRegion": "us-east-1",
     "platform": "AWS",
-    "lastSave": 1540739011123
+    "lastSave": 1540739722027
   },
   "VCS_STATE": {
     "provider": "GitHub",

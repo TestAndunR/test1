@@ -70,7 +70,8 @@
         "isDirectory": true,
         "children": [
           "e175d333-2eeb-4cba-9595-4696c88cdf78",
-          "669fa892-c1ec-4535-aedc-1e52741bd4e2"
+          "669fa892-c1ec-4535-aedc-1e52741bd4e2",
+          "d3a7e9fb-a130-4ea6-884d-9ff1daaab443"
         ],
         "isRemovable": true,
         "filePath": "test1/test"
@@ -120,19 +121,47 @@
           "timeout": 60,
           "memory": 128
         }
+      },
+      "d3a7e9fb-a130-4ea6-884d-9ff1daaab443": {
+        "id": "d3a7e9fb-a130-4ea6-884d-9ff1daaab443",
+        "parent": "ddfc5f8f-cda2-4ba8-8846-3dffcd12355e",
+        "name": "test2",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "08003185-7d1a-4e48-9fc8-4cd8e2b3b509"
+        ],
+        "isRemovable": true,
+        "filePath": "test1/test/test2"
+      },
+      "08003185-7d1a-4e48-9fc8-4cd8e2b3b509": {
+        "id": "08003185-7d1a-4e48-9fc8-4cd8e2b3b509",
+        "parent": "d3a7e9fb-a130-4ea6-884d-9ff1daaab443",
+        "name": "lambda.js",
+        "type": "LAMBDA_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "test1/test/test2/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "triggers": [],
+        "config": {
+          "runtime": "nodejs8.10",
+          "timeout": 60,
+          "memory": 128
+        }
       }
     },
-    "deletedFiles": [
-      "test1/lambdaRename.js"
-    ],
+    "deletedFiles": [],
     "rootNode": "ae78d98b-238e-41d7-a5e4-9cc6458e76a5",
     "openFiles": [
       "d6dd33be-5839-4536-99f3-228994b16180",
       "9cc7ec6d-c7c5-4b87-8e4e-c8e7fcfea81e",
       "669fa892-c1ec-4535-aedc-1e52741bd4e2",
-      "3bedf9c9-685b-4974-8adb-7f236fe28220"
+      "3bedf9c9-685b-4974-8adb-7f236fe28220",
+      "08003185-7d1a-4e48-9fc8-4cd8e2b3b509"
     ],
-    "currentFileId": "d6dd33be-5839-4536-99f3-228994b16180",
+    "currentFileId": "08003185-7d1a-4e48-9fc8-4cd8e2b3b509",
     "resources": {
       "apigusEast1hotspacesvendor16382dd9promopost": {
         "name": "apigusEast1hotspacesvendor16382dd9promopost",
@@ -185,7 +214,7 @@
     "projectVersion": "1.0.0",
     "projectRegion": "us-east-1",
     "platform": "AWS",
-    "lastSave": 1540739722027
+    "lastSave": 1540739913419
   },
   "VCS_STATE": {
     "provider": "GitHub",

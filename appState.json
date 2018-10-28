@@ -80,9 +80,7 @@
         }
       }
     },
-    "deletedFiles": [
-      "test1/lambda3.js"
-    ],
+    "deletedFiles": [],
     "rootNode": "ae78d98b-238e-41d7-a5e4-9cc6458e76a5",
     "openFiles": [
       "d6dd33be-5839-4536-99f3-228994b16180",
@@ -142,7 +140,7 @@
     "projectVersion": "1.0.0",
     "projectRegion": "us-east-1",
     "platform": "AWS",
-    "lastSave": 1540738698321
+    "lastSave": 1540738795100
   },
   "VCS_STATE": {
     "provider": "GitHub",

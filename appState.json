@@ -9,7 +9,6 @@
         "isDirectory": true,
         "children": [
           "d6dd33be-5839-4536-99f3-228994b16180",
-          "f451cd0b-0fc4-4d11-913a-ca9500805333",
           "9cc7ec6d-c7c5-4b87-8e4e-c8e7fcfea81e"
         ],
         "isRemovable": false,
@@ -45,23 +44,6 @@
           }
         }
       },
-      "f451cd0b-0fc4-4d11-913a-ca9500805333": {
-        "id": "f451cd0b-0fc4-4d11-913a-ca9500805333",
-        "parent": "ae78d98b-238e-41d7-a5e4-9cc6458e76a5",
-        "name": "lambdaRename.js",
-        "type": "LAMBDA_FILE",
-        "isDirectory": false,
-        "children": [],
-        "isRemovable": true,
-        "filePath": "test1/lambdaRename.js",
-        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
-        "triggers": [],
-        "config": {
-          "runtime": "nodejs8.10",
-          "timeout": 60,
-          "memory": 128
-        }
-      },
       "9cc7ec6d-c7c5-4b87-8e4e-c8e7fcfea81e": {
         "id": "9cc7ec6d-c7c5-4b87-8e4e-c8e7fcfea81e",
         "parent": "ae78d98b-238e-41d7-a5e4-9cc6458e76a5",
@@ -80,11 +62,12 @@
         }
       }
     },
-    "deletedFiles": [],
+    "deletedFiles": [
+      "test1/lambdaRename.js"
+    ],
     "rootNode": "ae78d98b-238e-41d7-a5e4-9cc6458e76a5",
     "openFiles": [
       "d6dd33be-5839-4536-99f3-228994b16180",
-      "f451cd0b-0fc4-4d11-913a-ca9500805333",
       "9cc7ec6d-c7c5-4b87-8e4e-c8e7fcfea81e"
     ],
     "currentFileId": "9cc7ec6d-c7c5-4b87-8e4e-c8e7fcfea81e",
@@ -140,7 +123,7 @@
     "projectVersion": "1.0.0",
     "projectRegion": "us-east-1",
     "platform": "AWS",
-    "lastSave": 1540738795100
+    "lastSave": 1540739011123
   },
   "VCS_STATE": {
     "provider": "GitHub",

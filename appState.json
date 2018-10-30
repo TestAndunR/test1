@@ -54,7 +54,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "test1/lambda.js",
-        "code": "let AWS = require('aws-sdk');\nconst ddb = new AWS.DynamoDB.DocumentClient();\n\nexports.handler = function (event, context, callback) {\n    ddb.scan({\n        TableName: 'Promotions'\n    }).promise().then(function (data) {\n        //your logic goes here\n    }).catch(function (err) {\n        //handle error\n    });\n\n    callback(null, { \"message\": \"Successfully executed\" });\n}",
+        "code": "let AWS = require('aws-sdk');\nconst ddb = new AWS.DynamoDB.DocumentClient();\nconsole.log(\"Test\")\nexports.handler = function (event, context, callback) {\n    ddb.scan({\n        TableName: 'Promotions'\n    }).promise().then(function (data) {\n        //your logic goes here\n    }).catch(function (err) {\n        //handle error\n    });\n\n    callback(null, { \"message\": \"Successfully executed\" });\n}",
         "triggers": [
           {
             "resourceName": "apigusEast1hotspacesvendor16382dd9promopost",
@@ -244,7 +244,7 @@
     "projectVersion": "1.0.0",
     "projectRegion": "us-east-1",
     "platform": "AWS",
-    "lastSave": 1540894926375
+    "lastSave": 1540894995893
   },
   "VCS_STATE": {
     "provider": "GitHub",

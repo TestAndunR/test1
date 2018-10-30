@@ -1,6 +1,6 @@
 let AWS = require('aws-sdk');
 const ddb = new AWS.DynamoDB.DocumentClient();
-
+console.log("Test")
 exports.handler = function (event, context, callback) {
     ddb.scan({
         TableName: 'Promotions'

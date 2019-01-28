@@ -9,5 +9,6 @@ exports.handler = function (event, context, callback) {
     }).catch(function (err) {
         //handle error
     });
+    console.log();
     callback(null, { "message": "Successfully executed" });
 }

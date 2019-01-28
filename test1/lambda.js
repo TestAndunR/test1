@@ -9,6 +9,6 @@ exports.handler = function (event, context, callback) {
     }).catch(function (err) {
         //handle error
     });
-
+xassasa
     callback(null, { "message": "Successfully executed" });
 }

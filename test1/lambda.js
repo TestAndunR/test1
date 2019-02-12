@@ -7,7 +7,7 @@ exports.handler = function (event, context, callback) {
     }).promise().then(function (data) {
         //your logic goes here
     }).catch(function (err) {
-        //handle error
+        //handle errornnnbnb
     });
     callback(null, { "message": "Successfully executed" });
 }

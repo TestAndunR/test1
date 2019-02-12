@@ -1,4 +1,4 @@
 exports.handler = function(event, context, callback) {
-    console.log();
+    console.log(aaaa);
     callback(null, {"message": "Successfully executed"});
 }
